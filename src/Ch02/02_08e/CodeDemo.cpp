@@ -11,6 +11,10 @@ int main(){
 
     int age[AGE_LENGTH];
     float temperature[] = {31.5, 32.7, 38.9};
+    int a = 1;
+    int b = 2;
+
+    int c = a*b;
 
     age[0] = 25;
     age[1] = 20;
@@ -26,6 +30,8 @@ int main(){
     std::cout << "Temp[0] = " << temperature[0] << std::endl;
     std::cout << "Temp[1] = " << temperature[1] << std::endl;
     std::cout << "Temp[2] = " << temperature[2] << std::endl;
+
+    std::cout << "The result of a*b = " << c << std::endl;
 
     std::cout << std::endl << std::endl;
     return (0);
