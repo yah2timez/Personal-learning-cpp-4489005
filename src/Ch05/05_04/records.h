@@ -46,14 +46,22 @@ private:
     std::vector<Course> courses;
     std::vector<Grade> grades;
 
+    // additional helper functions for report card generation
+    std::string get_course_name(int) const;
     float get_num_grade(char) const;
+
     
 public:
     void add_student(int, std::string);
     void add_course(int, std::string, unsigned char);
     void add_grade(int, int, char);
 
+    
+
     std::string get_student_name(int) const;
     unsigned char get_course_credits(int) const;
     float get_GPA(int) const;
+
+    // report card generation function
+    void report_card(int) const;
 };

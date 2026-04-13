@@ -4,8 +4,9 @@
     {
       "label": "build CodeDemo (msvc)",
       "type": "shell",
-      "command": "\"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cl /Z7 /EHsc \"${file}\" /Fe:\"${fileDirname}\\${fileBasenameNoExtension}.exe\" /link /DEBUG:NONE\"",
+      "command": "\"\"C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Auxiliary\\Build\\vcvars64.bat\" && cl /Z7 /EHsc \"*.cpp\" /Fe:\"${fileBasenameNoExtension}.exe\" /link /DEBUG:NONE\"",
       "options": {
+        "cwd": "${fileDirname}",
         "shell": {
           "executable": "cmd.exe",
           "args": ["/d", "/c"]
